@@ -19,10 +19,6 @@ public class User extends Person {
     }
 
     public boolean isPasswordCorrect(String n1){
-        if (n1.equals(password)) {
-            return true;
-        } else {
-            return false;
-        }
+        return n1.equals(password);
     }
 }
